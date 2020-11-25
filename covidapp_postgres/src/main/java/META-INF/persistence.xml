@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="covidapp_postgres">
+		<class>com.covidapp_postgres.model.PGCiudade</class>
+		<class>com.covidapp_postgres.model.PGDecreto</class>
+		<class>com.covidapp_postgres.model.PGDepartamento</class>
+		<class>com.covidapp_postgres.model.PGEmpresa</class>
+		<class>com.covidapp_postgres.model.PGEmpresasLogin</class>
+		<class>com.covidapp_postgres.model.PGEnfermedade</class>
+		<class>com.covidapp_postgres.model.PGHistoricosDecreto</class>
+		<class>com.covidapp_postgres.model.PGLoginPostgres</class>
+		<class>com.covidapp_postgres.model.PGPersona</class>
+		<class>com.covidapp_postgres.model.PGRegistro</class>
+		<class>com.covidapp_postgres.model.PGTipoDocumento</class>
+	</persistence-unit>
+</persistence>
