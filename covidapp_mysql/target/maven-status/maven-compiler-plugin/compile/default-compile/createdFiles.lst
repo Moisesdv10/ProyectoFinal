@@ -1,0 +1,11 @@
+com\covidapp_mysql\model\HistoricosDecreto.class
+com\covidapp_mysql\model\Enfermedade.class
+com\covidapp_mysql\model\Departamento.class
+com\covidapp_mysql\model\Login.class
+com\covidapp_mysql\model\TipoDocumento.class
+com\covidapp_mysql\model\EmpresaLogin.class
+com\covidapp_mysql\model\Persona.class
+com\covidapp_mysql\model\Registro.class
+com\covidapp_mysql\model\Ciudade.class
+com\covidapp_mysql\model\Decreto.class
+com\covidapp_mysql\model\Empresa.class
