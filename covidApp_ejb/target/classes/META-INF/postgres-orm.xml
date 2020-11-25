@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_2.xsd">
+	<named-query name="Ciudade.FIND_ALL">
+		<query>
+        SELECT c
+        FROM  PGCiudade c
+        </query>
+	</named-query>
+
+	<named-query name="Decreto.FIND_ALL">
+		<query>
+	SELECT d FROM PGDecreto d
+	</query>
+	</named-query>
+
+	<named-query name="Departamento.FIND_ALL">
+		<query>
+	SELECT dp FROM PGDepartamento dp
+	</query>
+	</named-query>
+
+	<named-query name="Empresa.FIND_ALL">
+		<query>
+	SELECT e FROM PGEmpresa e
+	</query>
+	</named-query>
+
+	<named-query name="EmpresasLogin.FIND_ALL">
+		<query>
+	SELECT e FROM PGEmpresasLogin e
+	</query>
+	</named-query>
+
+	<named-query name="HistoricosDecreto.findAll">
+		<query>
+	SELECT h FROM PGHistoricosDecreto h
+	</query>
+	</named-query>
+
+	<named-query name="LoginPostgres.FIND_ALL">
+		<query>
+	SELECT l FROM PGLoginPostgres l
+	</query>
+	</named-query>
+
+	<named-query name="Persona.findAll">
+		<query>
+	SELECT p FROM PGPersona p
+	</query>
+	</named-query>
+
+	<named-query name="Registro.findAll">
+		<query>
+	SELECT r FROM PGRegistro r
+	</query>
+	</named-query>
+
+	<named-query name="PGTipoDocumento.FIND_ALL">
+		<query>
+	SELECT t FROM PGTipoDocumento t
+	</query>
+	</named-query>
+
+	<named-query
+		name="LoginPostgres.FIND_USER_CREDENTIALS_POSTGRESQL">
+		<query>
+	SELECT l FROM PGLoginPostgres l WHERE l.usuario = :us AND l.clave = :ps	
+	</query>
+	</named-query>
+
+	<named-query name="PGLoginPostgres.FIND_USER">
+		<query>
+SELECT l
+FROM PGLoginPostgres l
+WHERE l.usuario = :us
+
+</query>
+	</named-query>
+
+</entity-mappings>
